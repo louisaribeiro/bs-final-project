@@ -1,0 +1,44 @@
+/* text and font styles */
+
+a, a:active, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#home #contact p {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 0.8750em;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 1em;
+}
+
+#home #contact h1 {
+	font-family: 'Abril Fatface', cursive, Georgia, serif;
+	font-size: 3em;
+	color: white;
+}
+
+#home #contact h2 {
+	font-family: 'Abril Fatface', cursive, Georgia, serif;
+	font-size: 2em;
+	color: white;
+}
+
+#home #contact a, a:hover, a:active, a:focus {
+	color: white;
+}
+
+.contactFormText {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.buttonText {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
