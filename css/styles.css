@@ -42,3 +42,38 @@ a:hover {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+#about #skills #experience #portfolio p {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 0.8750em;
+	font-weight: 400;
+	color: black;
+	margin-bottom: 1em;
+}
+
+#about #skills #experience #portfolio h1 {
+	font-family: 'Abril Fatface', cursive, Georgia, serif;
+	font-size: 2em;
+	color: black;
+}
+
+#home #contact a, a:hover, a:active, a:focus {
+	/*replace me */color: blue;
+}
+
+/* home */
+
+#home {
+	position: fixed;
+	background-image: url('images/homeBackground01_1400w.jpg');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+
