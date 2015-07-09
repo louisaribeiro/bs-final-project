@@ -1,5 +1,9 @@
 /* text and font styles */
 
+a, a:hover, a:active, a:focus {
+	/*replace me */color: blue;
+}
+
 a, a:active, a:focus {
 	text-decoration: none;
 }
@@ -8,7 +12,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-#home #contact p {
+#home p, #contact p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 0.8750em;
 	font-weight: 400;
@@ -16,19 +20,17 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-#home #contact h1 {
+#home h1, #contact h1 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
 	font-size: 3em;
 	color: white;
+	text-transform: uppercase;
+	margin-top: 0em;
 }
 
-#home #contact h2 {
+#home h2, #contact h2 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
 	font-size: 2em;
-	color: white;
-}
-
-#home #contact a, a:hover, a:active, a:focus {
 	color: white;
 }
 
@@ -43,7 +45,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
-#about #skills #experience #portfolio p {
+#about p, #skills p, #experience p, #portfolio p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 0.8750em;
 	font-weight: 400;
@@ -51,29 +53,46 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-#about #skills #experience #portfolio h1 {
+#about h1, #skills h1, #experience h1, #portfolio h1 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
 	font-size: 2em;
 	color: black;
-}
-
-#home #contact a, a:hover, a:active, a:focus {
-	/*replace me */color: blue;
+	text-transform: uppercase;
 }
 
 /* home */
 
-#home {
-	position: fixed;
-	background-image: url('images/homeBackground01_1400w.jpg');
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+header {
+	background-image: url(../images/homeBackground01_1400w.jpg);
   	background-size: cover;
-	width: 100%;
 	height: 100vh;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+
+.lrLogo img {
+	width: 30px;
+	height: 30px;
+}
+
+.greeting {
+
+}
+
+
+.downArrow img {
+	width: 30px;
+	height: 30px;
+}
 
 
 
