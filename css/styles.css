@@ -1,7 +1,11 @@
 /* text and font styles */
+/* red: R=156 G=30 B=51 */
+/* dark purple: R=54 G=0 B=51 */
+/* blue: rgb(11, 135, 147) */
+
 
 a, a:hover, a:active, a:focus {
-	/*replace me */color: blue;
+	color: rgb(11, 135, 147);
 }
 
 a, a:active, a:focus {
@@ -14,7 +18,7 @@ a:hover {
 
 #home p, #contact p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 0.8750em;
+	font-size: 1em;
 	font-weight: 400;
 	color: white;
 	margin-bottom: 1em;
@@ -22,10 +26,11 @@ a:hover {
 
 #home h1, #contact h1 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
-	font-size: 3em;
+	font-size: 6em;
 	color: white;
 	text-transform: uppercase;
 	margin-top: 0em;
+	line-height: 0.8em;
 }
 
 #home h2, #contact h2 {
@@ -47,7 +52,7 @@ a:hover {
 
 #about p, #skills p, #experience p, #portfolio p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 0.8750em;
+	font-size: 1em;
 	font-weight: 400;
 	color: black;
 	margin-bottom: 1em;
@@ -55,7 +60,7 @@ a:hover {
 
 #about h1, #skills h1, #experience h1, #portfolio h1 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
-	font-size: 2em;
+	font-size: 3em;
 	color: black;
 	text-transform: uppercase;
 }
@@ -68,31 +73,101 @@ header {
 	height: 100vh;
 	text-align: center;
 	margin-bottom: 50px;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display: flex;
+	-moz-box-direction: normal;
+  	-webkit-flex-direction: column;
+  	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-moz-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+	align-items: center;
 }
 
 #home {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 90vh;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display: flex;
+	-moz-box-direction: normal;
+  	-webkit-flex-direction: column;
+  	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-moz-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+	align-items: center;
 }
 
 
+.lrLogo {
+	flex: 1;
+}
+
 .lrLogo img {
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 }
 
 .greeting {
-
+	flex: 1;
 }
 
+.downArrow {
+	flex: 1;
+}
 
 .downArrow img {
 	width: 30px;
 	height: 30px;
 }
 
+/* About */
+
+#about {
+	text-align: center;
+	max-width: 600px;
+	margin-bottom: 50px;
+}
+
+#about img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+}
+
+/* Navbar */
+
+.dropdownFixed {
+	position: fixed;
+	top: 40px;
+	left: 20px;
+}
+
+.dropdown-menu {
+	margin-left: 20px;
+}
+
+.darkpurpleBackground {
+	background-color: rgb(54, 0, 51);
+}
+
+.blueBackground {
+	background-color: rgb(11, 135, 147);
+}
+
+.redBackground {
+	background-color: rgb(156, 30, 51);
+}
 
 
