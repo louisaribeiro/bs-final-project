@@ -1,8 +1,4 @@
 /* text and font styles */
-/* red: R=156 G=30 B=51 */
-/* dark purple: R=54 G=0 B=51 */
-/* blue: rgb(11, 135, 147) */
-
 
 a, a:hover, a:active, a:focus {
 	color: rgb(11, 135, 147);
@@ -35,8 +31,10 @@ a:hover {
 
 #home h2, #contact h2 {
 	font-family: 'Abril Fatface', cursive, Georgia, serif;
-	font-size: 2em;
+	font-size: 3em;
+	text-transform: uppercase;
 	color: white;
+	margin-bottom: 1em;
 }
 
 .contactFormText {
@@ -47,7 +45,9 @@ a:hover {
 .buttonText {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 700;
+	font-size: 1em;
 	text-transform: uppercase;
+	color: white;
 }
 
 #about p, #skills p, #experience p, #portfolio p {
@@ -63,27 +63,63 @@ a:hover {
 	font-size: 3em;
 	color: black;
 	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+#experience h2 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: black;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+}
+
+/* colours */
+
+.darkpurpleBackground {
+	background-color: rgb(54, 0, 51);
+}
+
+.blueBackground {
+	background-color: rgb(11, 135, 147);
+}
+
+.redBackground {
+	background-color: rgb(156, 30, 51);
 }
 
 /* home */
 
 header {
 	background-image: url(../images/homeBackground01_1400w.jpg);
+
+	-moz-background-size: cover;
   	background-size: cover;
+  	width: 100%;
+
+  	-webkit-height: 100vh;
+	-moz-height: 100vh;
+	-ms-height: 100vh;
+	-o-height: 100vh;
 	height: 100vh;
+
 	text-align: center;
 	margin-bottom: 50px;
+
 	display: -webkit-box;
-  	display: -moz-box;
   	display: -ms-flexbox;
   	display: -webkit-flex;
 	display: flex;
-	-moz-box-direction: normal;
+	-moz-box-direction: column;
   	-webkit-flex-direction: column;
   	-ms-flex-direction: column;
 	flex-direction: column;
+
+	-moz-justify-content: center;
 	-webkit-justify-content: center;
 	justify-content: center;
+
 	-moz-box-align: center;
   	-ms-flex-align: center;
   	-webkit-align-items: center;
@@ -91,18 +127,25 @@ header {
 }
 
 #home {
+	-webkit-height: 90vh;
+	-moz-height: 90vh;
+	-ms-height: 90vh;
+	-o-height: 90vh;
 	height: 90vh;
+
 	display: -webkit-box;
-  	display: -moz-box;
   	display: -ms-flexbox;
   	display: -webkit-flex;
 	display: flex;
-	-moz-box-direction: normal;
+
+	-moz-box-direction: column;
   	-webkit-flex-direction: column;
   	-ms-flex-direction: column;
 	flex-direction: column;
+
 	-webkit-justify-content: center;
 	justify-content: center;
+
 	-moz-box-align: center;
   	-ms-flex-align: center;
   	-webkit-align-items: center;
@@ -111,7 +154,11 @@ header {
 
 
 .lrLogo {
+	-moz-flex: 1;
+	-webkit-flex: 1; 
+  	-ms-flex: 1; 
 	flex: 1;
+	/*border: solid;*/
 }
 
 .lrLogo img {
@@ -120,11 +167,29 @@ header {
 }
 
 .greeting {
+	-moz-flex: 1;
+	-webkit-flex: 1;     
+ 	-ms-flex: 1; 
 	flex: 1;
+	/*border: solid;*/
 }
 
 .downArrow {
+	-moz-flex: 1;
+	-webkit-flex: 1; 
+  	-ms-flex: 1; 
 	flex: 1;
+
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display: flex;
+
+	-moz-box-align: flex-end;
+  	-ms-flex-align: flex-end;
+  	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	/*border: solid;*/
 }
 
 .downArrow img {
@@ -150,24 +215,83 @@ header {
 
 .dropdownFixed {
 	position: fixed;
-	top: 40px;
+	top: 20px;
 	left: 20px;
 }
 
+.dropdown {
+	margin-left: 40px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+
+.margin5 {
+	margin: 5px;
+}
+
 .dropdown-menu {
-	margin-left: 20px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
-.darkpurpleBackground {
-	background-color: rgb(54, 0, 51);
+.dropdown-menu>li>a {
+  	padding: 10px 20px;
+  	font-weight: 700;
+  	line-height: 1.42857143;
+  	color: #fff;
 }
 
-.blueBackground {
-	background-color: rgb(11, 135, 147);
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
 }
 
-.redBackground {
-	background-color: rgb(156, 30, 51);
+/* Skills */
+
+#skills, #portfolio {
+	background-color: #eeeeee;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
+
+/* Experience */
+
+#experience h1 {
+	margin-top: 50px;
+	margin-bottom: 1em;
+}
+
+.experience {
+	padding-left: 10px;
+	margin-bottom: 50px;
+}
+
+.experienceBlue {
+	border-left: solid 1em rgb(11, 135, 147);
+}
+
+.experienceRed {
+	border-left: solid 1em rgb(156, 30, 51);
+}
+
+.experienceDarkPurple {
+	border-left: solid 1em rgb(54, 0, 51);
+}
+
+/* Contact */
+
+#contact {
+	background: -webkit-linear-gradient(rgb(156, 30, 51) 0%, rgb(54, 0, 51) 100%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgb(156, 30, 51) 0%, rgb(54, 0, 51) 100%); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(rgb(156, 30, 51) 0%, rgb(54, 0, 51) 100%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgb(156, 30, 51) 0%, rgb(54, 0, 51) 100%); /* Standard syntax */
+  	padding-top: 50px;
+  	padding-bottom: 50px;
+}
+
 
 
