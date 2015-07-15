@@ -12,7 +12,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-#home p, #contact p {
+#home p, #contact p, #portfolio p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 400;
@@ -50,7 +50,7 @@ a:hover {
 	color: white;
 }
 
-#about p, #skills p, #experience p, #portfolio p {
+#about p, #skills p, #experience p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 400;
@@ -280,6 +280,95 @@ header {
 
 .experienceDarkPurple {
 	border-left: solid 1em rgb(54, 0, 51);
+}
+
+/* Portfolio */
+
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  -moz-perspective: 600;
+  -webkit-perspective: 600;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+
+  -ms-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -ms-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transform-style: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+
+  width: 100%;
+}
+
+.card:hover {
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #666666;
+}
+
+.card .backDarkPurple {
+  background: rgb(54, 0, 51);
+  color: white;
+  line-height: 150px;
+  text-align: center;
+
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card .backRed {
+  background: rgb(156, 30, 51);
+  color: white;
+  line-height: 150px;
+  text-align: center;
+
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card .backBlue {
+  background: rgb(11, 135, 147);
+  color: white;
+  line-height: 150px;
+  text-align: center;
+
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.top-buffer { 
+	margin-top: 1em; 
 }
 
 /* Contact */
