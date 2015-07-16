@@ -1,0 +1,18 @@
+@media screen and (max-width:599px) {
+	#home h1, #contact h1 {
+		font-size: 4em;
+		line-height: 1em;
+	}
+
+	.card-container {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width:899px) {
+	.card-container {
+		height: 120px;
+		width: 120px;
+	}
+}
