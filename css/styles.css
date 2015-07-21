@@ -216,7 +216,7 @@ header {
 .dropdownFixed {
 	position: fixed;
 	top: 20px;
-	left: 20px;
+	left: 0px;
 }
 
 .dropdown {
@@ -258,10 +258,21 @@ header {
 	padding-bottom: 50px;
 }
 
+#skills p {
+	color: #666666;
+}
+
+/*override circliful*/
+.circle-text {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #333333;
+}
+
 /* Experience */
 
 #experience h1 {
-	margin-top: 50px;
+	padding-top: 50px;
 	margin-bottom: 1em;
 }
 
