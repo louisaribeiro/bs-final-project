@@ -12,11 +12,27 @@
 	.dropdown {
 		display: none;
 	}
+
+	.modal-body img {
+		width: 200px;
+	}
+
+	.modal-content {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:899px) {
 	.card-container {
 		height: 120px;
 		width: 120px;
+	}
+
+	.modal-body img {
+		width: 200px;
+	}
+	
+	.modal-content {
+		width: 100%;
 	}
 }
